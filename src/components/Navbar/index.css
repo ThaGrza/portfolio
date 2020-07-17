@@ -1,0 +1,11 @@
+.nav-container{
+  display: flex;
+}
+.page-title{
+  text-align: center;
+  margin: auto;
+}
+.nav-elements{
+  margin: 0;
+  margin-right: 50px;
+}

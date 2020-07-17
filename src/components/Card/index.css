@@ -1,0 +1,6 @@
+.card-component {
+  background-color: aqua;
+  max-width: 300px;
+  margin: auto;
+  /* display: flex; */
+}

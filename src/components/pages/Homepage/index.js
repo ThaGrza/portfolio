@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Route, Switch} from "react-router-dom";
 import Card from "../../Card/index.js";
 import "../../Card/index.css";
 import Websites from "../../../websites.json";
@@ -16,14 +16,16 @@ export default class Home extends Component {
   render() {
     return (
     <div className="container">
-      <Router>
+      <Switch>
         <Navbar>
-          <Switch>
-            <Route exact path="/" component={Homepage} />
-            <Route exact path="/about" component={Aboutme} />
-          </Switch>
+            <Route exact path="/">
+              <Homepage/>
+            </Route>
+            <Route exact path="/about">
+              <Aboutme />
+            </Route>
         </Navbar>
-      </Router>
+      </Switch>
       {Websites.map(Websites => (
       <Card
       image={Websites.image}

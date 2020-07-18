@@ -1,10 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = props => (
   <div className="nav-container">
     <h1 className="page-title">AGRISWOLD.COM</h1>
-    <h2 className="nav-elements"> <a href="#">About Me</a></h2>
-    <h2 className="nav-elements"> <a href="#"></a>Contact</h2>
+    <li className="navbar-link">
+      <Link to="/about">About Me</Link>
+    </li>
+    <li className="navbar-link">
+      <Link to="/contact">Contact</Link>
+    </li>
   </div>
 );
 

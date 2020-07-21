@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = props => (
   <div className="nav-container">
-    <h1 className="page-title">AGRISWOLD.COM</h1>
+    <h1 className="page-title">
+      <Link to="/">Agriswold.com</Link>
+    </h1>
     <li className="navbar-link">
       <Link to="/about">About Me</Link>
     </li>

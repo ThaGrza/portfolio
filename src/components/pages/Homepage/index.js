@@ -7,25 +7,10 @@ import Navbar from "../../Navbar/index.js";
 import "../../Navbar/index.css";
 import Footer from "../../Footer/index.js";
 import "../../Footer/index.css"
-import Aboutme from "../Aboutme/index.js";
-import Homepage from "../Homepage/index.js";
 
-
-
-export default class Home extends Component {
-  render() {
-    return (
+function Homepage (props) {
+  return (
     <div className="container">
-      <Switch>
-        <Navbar>
-            <Route exact path="/">
-              <Homepage/>
-            </Route>
-            <Route exact path="/about">
-              <Aboutme />
-            </Route>
-        </Navbar>
-      </Switch>
       {Websites.map(Websites => (
       <Card
       image={Websites.image}
@@ -33,8 +18,8 @@ export default class Home extends Component {
       url={Websites.url}
       />
       ))}
-      <Footer />
     </div>
-  );
-  }
+  )
 }
+
+export default Homepage;

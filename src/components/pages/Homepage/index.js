@@ -1,11 +1,8 @@
-import React, {Component} from "react";
-import { BrowserRouter as Route, Switch} from "react-router-dom";
+import React from "react";
 import Card from "../../Card/index.js";
 import "../../Card/index.css";
 import Websites from "../../../websites.json";
-import Navbar from "../../Navbar/index.js";
 import "../../Navbar/index.css";
-import Footer from "../../Footer/index.js";
 import "../../Footer/index.css"
 
 function Homepage (props) {

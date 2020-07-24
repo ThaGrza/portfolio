@@ -1,7 +1,9 @@
 .footer-container {
-  margin: 20px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
+  position: static;
+  bottom: 0;
+  width: 100%;
 }
 
 .social-icon{

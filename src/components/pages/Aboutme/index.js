@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../Footer/index.js";
 
 
 function Aboutme (props) {

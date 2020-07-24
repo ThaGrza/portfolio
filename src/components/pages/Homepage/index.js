@@ -2,8 +2,6 @@ import React from "react";
 import Card from "../../Card/index.js";
 import "../../Card/index.css";
 import Websites from "../../../websites.json";
-import "../../Navbar/index.css";
-import "../../Footer/index.css"
 import "./index.css";
 
 function Homepage (props) {

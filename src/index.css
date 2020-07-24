@@ -11,6 +11,6 @@ code {
 
 .parent-container {
   display: grid;
-  grid-template: auto 1fr auto;
+  place-items: center;
 }
 

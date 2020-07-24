@@ -1,5 +1,6 @@
 .nav-container{
   display: flex;
+  width: 1200px;
   background-color: whitesmoke;
 }
 .page-title{

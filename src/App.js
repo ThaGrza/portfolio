@@ -9,7 +9,7 @@ import Contact from "./components/pages/Contact/index";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="parent-container">
         <Navbar />
         <Route exact path="/" component={Homepage} />
         <Route exact path="/about" component={Aboutme} />

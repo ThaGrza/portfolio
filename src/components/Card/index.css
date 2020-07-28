@@ -1,7 +1,8 @@
 .card-component {
-  background-color: aqua;
+  background-color: whitesmoke;
   margin: 2rem;
   padding: 1rem;
+  border-radius: 0.7rem;
 }
 
 .card-img {

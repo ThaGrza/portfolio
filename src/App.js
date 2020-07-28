@@ -7,6 +7,7 @@ import Footer from "./components/Footer/index";
 import Contact from "./components/pages/Contact/index";
 import "./components/Footer/index.css"
 import "./components/Navbar/index.css";
+import "./components/pages/Aboutme/index.css"
 
 
 

@@ -3,8 +3,8 @@ import React from "react";
 const Card = props => (
   <div className="card-component">
     <img className="card-img" alt=":(" src={props.image} />
-    <h4>Tech used: {props.tech} </h4>
-    <h4>Github:<a target="_blank" rel="nooponer noreferrer" href={props.url}> {props.name}</a> </h4>
+    <p><strong>Tech used: </strong>{props.tech} </p>
+    <p><strong>Github:</strong><a target="_blank" rel="nooponer noreferrer" href={props.url}> {props.name}</a> </p>
   </div>
 )
 

@@ -1,10 +1,11 @@
 import React from "react";
+import Profilepic from "./profile2.png";
 
 
 function Aboutme (props) {
   return (
     <div className="aboutme-container">
-      <img className="profile-pic" src=""></img>
+      <img className="profile-pic" alt="🧙‍♂️" src={Profilepic}></img>
       <div className="aboutme">
         <p>My name is Andrew Griswold and I am a 24 year old aspiring programmer. I moved to Austin about two and a half years ago from New Hampshire with the intention 
           of learning as much about programming as I could. I got into computers as a kid, growing up playing super mario with my dad, I fell in love. Going on to mod 

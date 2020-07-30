@@ -1,0 +1,18 @@
+.contact-container{
+  background-color: #fff;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  width: 80rem;
+  border-radius: 0.5rem;
+  text-emphasis: wrap;
+}
+
+.contact{
+  padding: 0 1.5rem 1rem 1.5rem;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 1100;
+  font-display: block;
+  text-indent: 5rem;
+  line-height: 2.4rem;
+}

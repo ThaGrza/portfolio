@@ -1,10 +1,12 @@
 .card-component {
   background-color: #fff;
+
   margin: 2rem;
   padding: 1rem;
   border-radius: 0.7rem;
 }
 
 .card-img {
+  border-radius: 1rem;
   height: 300px;
 }

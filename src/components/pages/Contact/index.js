@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 class ContactForm extends React.Component {
   constructor(props){
@@ -10,6 +11,22 @@ class ContactForm extends React.Component {
       message: ""
     };
   }
+
+  handleSubmit(event){
+    event.preventDefault();
+    axios({
+      method: "POST",
+      url:"http//localhost:3002/send",
+      data: this.state
+    }).then((response)=>{
+      if(response.data.status === "success"){
+        alert("Message Sent.");
+        this.resetForm()
+      }else if(response.data.status === "fail"){
+        alert("Message failed to send.")
+      }
+    })
+  };
 
   render() {
     return(
@@ -51,10 +68,6 @@ class ContactForm extends React.Component {
 
   onMessageChange(event){
     this.setState({message: event.target.value})
-  };
-
-  handleSubmit(event){
-    // Fill Out
   };
 }
 

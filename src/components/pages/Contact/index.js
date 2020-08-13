@@ -14,19 +14,20 @@ class ContactForm extends React.Component {
 
   handleSubmit(event){
     event.preventDefault();
+    console.log(this.state);
     axios({
-      method: "POST",
-      url:"http//localhost:3002/send",
-      data: this.state
+      method: "POST", 
+      url:"http://localhost:3000/send", 
+      data:  this.state
     }).then((response)=>{
-      if(response.data.status === "success"){
-        alert("Message Sent.");
+      if (response.data.status === "success"){
+        alert("Message Sent."); 
         this.resetForm()
       }else if(response.data.status === "fail"){
         alert("Message failed to send.")
       }
     })
-  };
+  }
 
   render() {
     return(
@@ -34,7 +35,7 @@ class ContactForm extends React.Component {
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="form-group">
             <label htmlFor="name">Name</label>
-            <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+            <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
           </div>
           <div className="form-group">
             <label htmlFor="company">Company</label>
@@ -56,6 +57,7 @@ class ContactForm extends React.Component {
 
   onNameChange(event){
     this.setState({name: event.target.value})
+    // console.log(this.state);
   };
 
   onCompanyChange(event){

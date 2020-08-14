@@ -16,6 +16,9 @@ N/A
 <b> Built with </b>
 - [Javascript](https://www.javascript.com/)
 - [React](https://reactjs.org/)
+- [Axios](https://www.npmjs.com/package/axios)
+- [Express](https://expressjs.com/)
+- [Node.js](https://nodejs.org/en/)
 
 ## Features
 N/A

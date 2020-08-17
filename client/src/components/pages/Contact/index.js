@@ -17,7 +17,7 @@ class ContactForm extends React.Component {
     console.log(this.state);
     axios({
       method: "POST", 
-      url:"http://localhost:3000/send", 
+      url:"http://localhost:3001/send", 
       data:  this.state
     }).then((response)=>{
       if (response.data.status === "success"){
@@ -27,6 +27,10 @@ class ContactForm extends React.Component {
         alert("Message failed to send.")
       }
     })
+  }
+
+  resetForm(){
+    this.setState({ name: "", company: "", email: "", message: ""})
   }
 
   render() {

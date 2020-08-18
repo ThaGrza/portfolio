@@ -42,7 +42,7 @@ class ContactForm extends React.Component {
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="form-group">
             <label>
-            Name: <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+            Name:<input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
             </label>
           </div>
           <div className="form-group">
@@ -57,7 +57,7 @@ class ContactForm extends React.Component {
           </div>
           <div className="form-group">
             <label>
-            Message: <input type="text" className="form-control" id="message" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+            Message: <textarea className="form-control" id="message" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
             </label>
           </div>
           <button type="submit" className="form-button">Submit</button>

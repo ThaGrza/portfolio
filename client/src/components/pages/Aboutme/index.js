@@ -1,5 +1,6 @@
 import React from "react";
 import Profilepic from "./profile2.png";
+import "./index.css";
 
 
 function Aboutme (props) {

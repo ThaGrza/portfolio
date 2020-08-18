@@ -5,10 +5,6 @@ import Aboutme from './components/pages/Aboutme';
 import Navbar from "./components/Navbar/index";
 import Footer from "./components/Footer/index";
 import Contact from "./components/pages/Contact/index";
-import "./components/Footer/index.css"
-import "./components/Navbar/index.css";
-import "./components/pages/Aboutme/index.css"
-import "./components/pages/Contact/index.css"
 
 
 

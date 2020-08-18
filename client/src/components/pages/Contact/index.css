@@ -31,15 +31,6 @@ label{
   /* margin-bottom: .5rem; */
 }
 
-
-#message{
-  /* Atleast one form-control id has to be here for the below class to work, have no idea why */
-  /* height: 10rem; */
-}
-
-
-
-
 input, textarea{
   flex: 0 0 20rem;
   width: 20rem;
@@ -59,8 +50,4 @@ textarea{
 button.form-button{
   margin-left: 15rem;
   width: 10rem;
-}
-
-button[type=submit]:hover {
-  background-color: rgb(107, 109, 112);
 }

@@ -2,10 +2,12 @@ const express = require("express");
 const path = require("path");
 const PORT   = process.env.PORT || 3001;
 const app = express();
+const forceSsl = require("force-ssl-heroku");
 
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(forceSsl);
 
 if(process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));

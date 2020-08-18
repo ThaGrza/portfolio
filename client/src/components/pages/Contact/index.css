@@ -5,23 +5,50 @@
   width: 80rem;
   border-radius: 0.5rem;
   text-emphasis: wrap;
-}
-
-.contact{
-  padding: 0 1.5rem 1rem 1.5rem;
-  font-size: 24px;
-  font-family: sans-serif;
-  font-weight: 1100;
-  font-display: block;
   text-indent: 5rem;
   line-height: 2.4rem;
 }
 
+#contact-form{
+  padding: 0 1.5rem 1rem 1.5rem;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  font-weight: 1100;
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+.contact-intro{
+
+}
+
 label{
-};
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: right;
+  width: 30rem;
+  line-height: 2rem;
+  /* margin-bottom: .5rem; */
+}
+/* 
+#name{
+}
 
-.form-control{
-};
+#company{}
 
-.form-group{
-};
+#email{} */
+
+#message{
+  /* Atleast one form-control id has to be here for the below class to work, have no idea why */
+  height: 10rem;
+}
+
+
+input{
+  flex: 0 0 20rem;
+  width: 20rem;
+  height: 1.4rem;
+  margin-left: 1rem;
+
+}

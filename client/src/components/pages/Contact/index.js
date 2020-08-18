@@ -15,7 +15,6 @@ class ContactForm extends React.Component {
 
   handleSubmit(event){
     event.preventDefault();
-    console.log(this.state);
     axios({
       method: "POST", 
       url:"http://localhost:3001/send", 
@@ -37,22 +36,29 @@ class ContactForm extends React.Component {
   render() {
     return(
       <div className="contact-container">
+        <div className="contact-intro">
+          <p>Hey travelers! If you liked a porject or had questions feel free to fill out the below form to get in contact with me!</p>
+        </div>
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+            <label>
+            Name: <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+            </label>
           </div>
           <div className="form-group">
-            <label htmlFor="company">Company</label>
-            <input type="text" className="form-control" value={this.state.company} onChange={this.onCompanyChange.bind(this)} />
+            <label>
+            Company: <input type="text" className="form-control" id="company" value={this.state.company} onChange={this.onCompanyChange.bind(this)} />
+            </label>
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+            <label>
+            Email: <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+            </label>
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <input type="text" className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+            <label>
+            Message: <input type="text" className="form-control" id="message" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+            </label>
           </div>
           <button type="submit" className="form-button">Submit</button>
         </form>

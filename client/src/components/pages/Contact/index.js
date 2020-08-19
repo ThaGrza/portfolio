@@ -22,7 +22,7 @@ class ContactForm extends React.Component {
     }).then((response)=>{
       if (response.data.status === "success"){
         alert("Message Sent."); 
-        this.resetForm()
+        this.resetForm();
       }else if(response.data.status === "fail"){
         alert("Message failed to send.")
       }
@@ -37,7 +37,7 @@ class ContactForm extends React.Component {
     return(
       <div className="contact-container">
         <div className="contact-intro">
-          <p>Hey travelers! If you liked a porject or had questions feel free to fill out the below form to get in contact with me!</p>
+          <p>Hey travelers! If you liked a project or had questions feel free to fill out the below form to get in contact with me!</p>
         </div>
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="form-group">

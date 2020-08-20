@@ -15,19 +15,31 @@ class ContactForm extends React.Component {
 
   handleSubmit(event){
     event.preventDefault();
-    axios({
-      method: "POST", 
-      url:"http://localhost:3001/send", 
-      data:  this.state
-    }).then((response)=>{
-      if (response.data.status === "success"){
-        alert("Message Sent."); 
-        this.resetForm();
-      }else if(response.data.status === "fail"){
-        alert("Message failed to send.")
-      }
+    axios.post("/send",{
+      data: this.state
     })
-  }
+    .then(function (response) {
+      console.log(response);
+      this.resetForm();
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  };
+    
+  //   axios({
+  //     method: "POST", 
+  //     url:"http://localhost:3001/send", 
+  //     data:  this.state
+  //   }).then((response)=>{
+  //     if (response.data.status === "success"){
+  //       alert("Message Sent."); 
+  //       this.resetForm();
+  //     }else if(response.data.status === "fail"){
+  //       alert("Message failed to send.")
+  //     }
+  //   })
+  // }
 
   resetForm(){
     this.setState({ name: "", company: "", email: "", message: ""})

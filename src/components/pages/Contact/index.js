@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import Axios from "axios";
 import "./index.css";
 
 class ContactForm extends React.Component {
@@ -16,17 +16,16 @@ class ContactForm extends React.Component {
   handleSubmit(event){
     event.preventDefault();
     let data = JSON.stringify(this.state)
-    axios.post("/send",{
+    Axios.post("/send",{
       data: this.state
     })
     .then(function (response) {
-      console.log(response);
-      this.resetForm();
     })
     .catch(function (error) {
       console.log(data);
       console.log(error);
     });
+    this.resetForm();
   };
     
 

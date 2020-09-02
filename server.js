@@ -4,6 +4,7 @@ const cors = require('cors');
 const sendGrid = require('@sendGrid/mail');
 
 const app = express();
+const PORT = process.env.PORT || 3001;
 
 app.use(bodyParser.json());
 
@@ -17,10 +18,15 @@ app.use((req, res, next) => {
   next();
 })
 
-app.get('/test', (req, res, next) => {
-  res.send('API Server Is Working');
-});
+// app.get('/test', (req, res, next) => {
+//   res.send('API Server Is Working');
+// });
 
-app.post('/api/sent', (req, res, next) => {
+app.post('/send', (req, res, next) => {
   console.log(req.body);
 });
+
+app.listen(PORT, function() {
+  console.log(`Api Server is listening on port: ${PORT}`);
+});
+

@@ -1,6 +1,6 @@
 [{
   "name": "Train Scheduler",
-  "image": "./src/images/trainScheduler.png",
+  "image": "",
   "tech": "Javascript, React, Firebase",
   "url": "https://github.com/ThaGrza/trainScheduler"
 },

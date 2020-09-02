@@ -9,7 +9,6 @@ function Homepage (props) {
     <div className="card-container">
       {Websites.map(Websites => (
       <Card
-      image={Websites.image}
       tech={Websites.tech}
       url={Websites.url}
       name={Websites.name}

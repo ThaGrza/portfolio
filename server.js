@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const sgMail = require('@sendgrid/mail');
+require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -22,10 +23,11 @@ app.use((req, res, next) => {
 // app.get('/test', (req, res, next) => {
 //   res.send('API Server Is Working');
 // });
+// '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'
 
 app.post('/send', (req, res, next) => {
   console.log(req.body);
-  sgMail.setApiKey('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');
+  sgMail.setApiKey(process.env.SG_KEY);
 
   const msg = {
     to: 'andrewgriswold7@gmail.com',

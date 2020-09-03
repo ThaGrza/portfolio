@@ -73,8 +73,8 @@ class ContactForm extends React.Component {
             Message: <textarea className="form-control" id="message" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
             </label>
           </div>
-          {this.state.emailSent === true && <p className="email-alert">Email Sent</p>}
-          {this.state.emailSent === false && <p className="email-alert">Email not sent</p>}
+          {this.state.emailSent === true && <p className="email1-alert">Email Sent!</p>}
+          {this.state.emailSent === false && <p className="email2-alert">Email not sent.</p>}
           <button type="submit" className="form-button">Submit</button>
         </form>
       </div>

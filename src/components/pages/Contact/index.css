@@ -53,3 +53,17 @@ button.form-button{
   margin-left: 15rem;
   width: 10rem;
 }
+
+.email1-alert{
+  color: rgb(43, 182, 43);
+  margin-left: 11rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.email2-alert{
+  color: red;
+  margin-left: 11rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

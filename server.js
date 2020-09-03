@@ -13,7 +13,7 @@ app.use(cors());
 
 app.use((req, res, next) => {
   // Change for our server only after testing.
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  // res.setHeader('Access-Control-Allow-Origin', '*');
 
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
@@ -26,7 +26,6 @@ app.use((req, res, next) => {
 // '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'
 
 app.post('/send', (req, res, next) => {
-  console.log(req.body);
   sgMail.setApiKey(process.env.SG_KEY);
 
   const msg = {
@@ -42,7 +41,6 @@ app.post('/send', (req, res, next) => {
       res.status(200).json({
         success: true
       });
-      console.log("Email Sent");
     })
     .catch(err => {
       console.log(err.response.body);

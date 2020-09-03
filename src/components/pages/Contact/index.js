@@ -1,6 +1,7 @@
 import React from "react";
 import Axios from "axios";
 import "./index.css";
+import { findAllByTestId } from "@testing-library/react";
 
 class ContactForm extends React.Component {
   constructor(props){
@@ -15,16 +16,28 @@ class ContactForm extends React.Component {
 
   handleSubmit(event){
     event.preventDefault();
-    let data = JSON.stringify(this.state)
-    Axios.post("/send",{
-      data: this.state
+    // let data = JSON.stringify(this.state)
+
+    Axios.post('/send', this.state)
+      .then(res => {
+        if(res.data.success){
+          this.setState({
+            disabled: false,
+            emailSent: true
+        });
+      }else {
+        this.setState({
+          disabled: false,
+          emailSent: false
+        });
+      }
     })
-    .then(function (response) {
-    })
-    .catch(function (error) {
-      console.log(data);
-      console.log(error);
-    });
+      .catch( err => {
+        this.setState({
+          disabled: false,
+          emailSent: false
+        });
+      })
     this.resetForm();
   };
     

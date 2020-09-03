@@ -1,7 +1,6 @@
 import React from "react";
 import Axios from "axios";
 import "./index.css";
-import { findAllByTestId } from "@testing-library/react";
 
 class ContactForm extends React.Component {
   constructor(props){
@@ -10,7 +9,8 @@ class ContactForm extends React.Component {
       name: "",
       company: "",
       email: "",
-      message: ""
+      message: "",
+      emailSent: null
     };
   }
 
@@ -23,7 +23,7 @@ class ContactForm extends React.Component {
         if(res.data.success){
           this.setState({
             disabled: false,
-            emailSent: true
+            emailSent: true,
         });
       }else {
         this.setState({
@@ -73,6 +73,8 @@ class ContactForm extends React.Component {
             Message: <textarea className="form-control" id="message" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
             </label>
           </div>
+          {this.state.emailSent === true && <p className="email-alert">Email Sent</p>}
+          {this.state.emailSent === false && <p className="email-alert">Email not sent</p>}
           <button type="submit" className="form-button">Submit</button>
         </form>
       </div>

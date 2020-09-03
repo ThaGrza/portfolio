@@ -9,9 +9,11 @@ function Homepage (props) {
     <div className="card-container">
       {Websites.map(Websites => (
       <Card
+      image={Websites.image}
       tech={Websites.tech}
-      url={Websites.url}
+      githubUrl={Websites.githubUrl}
       name={Websites.name}
+      url={Websites.url}
       />
       ))}
     </div>

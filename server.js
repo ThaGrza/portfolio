@@ -27,11 +27,12 @@ app.use((req, res, next) => {
 
 app.post('/send', (req, res, next) => {
   sgMail.setApiKey(process.env.SG_KEY);
+  console.log(req.body);
 
   const msg = {
     to: 'andrewgriswold7@gmail.com',
     from: 'andrewgriswold7@gmail.com',
-    subject: 'Agriswold.com' + req.body.name,
+    subject: req.body.name,
     text: req.body.email + req.body.company + req.body.message,
     html: '<strong>and easy to do anywhere, even with Node.js</strong>',
   }

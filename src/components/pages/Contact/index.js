@@ -6,18 +6,19 @@ class ContactForm extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      name: "",
-      company: "",
-      email: "",
-      message: "",
-      emailSent: null
+      name: '',
+      company: '',
+      email: '',
+      message: '',
+      emailSent: null,
+      errors:  {name: '', company: '', email: '', message:''}
     };
   }
 
   handleSubmit(event){
     event.preventDefault();
-    // let data = JSON.stringify(this.state)
 
+    // Post request for sendgrid.
     Axios.post('/send', this.state)
       .then(res => {
         if(res.data.success){
@@ -40,10 +41,12 @@ class ContactForm extends React.Component {
       })
     this.resetForm();
   };
+
+  
     
 
   resetForm(){
-    this.setState({ name: "", company: "", email: "", message: ""})
+    this.setState({ name: '', company: '', email: '', message: ''})
   }
 
   render() {
@@ -55,6 +58,7 @@ class ContactForm extends React.Component {
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="form-group">
             <label>
+              <span className='input-error'>{this.state.errors.name}</span>
             Name:<input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
             </label>
           </div>
@@ -82,7 +86,13 @@ class ContactForm extends React.Component {
   };
 
   onNameChange(event){
-    this.setState({name: event.target.value})
+    let name = this.state.name;
+    let error = this.state.errors.name;
+    if(name === ''){
+      error.name = 'Cannot be empty'
+    }else{
+      this.setState({name: event.target.value})
+    }
   };
 
   onCompanyChange(event){

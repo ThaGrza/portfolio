@@ -25,19 +25,16 @@ class ContactForm extends React.Component {
       .then(res => {
         if(res.data.success){
           this.setState({
-            disabled: false,
             emailSent: true,
         });
       }else {
         this.setState({
-          disabled: false,
           emailSent: false
         });
       }
     })
       .catch( err => {
         this.setState({
-          disabled: false,
           emailSent: false
         });
       })

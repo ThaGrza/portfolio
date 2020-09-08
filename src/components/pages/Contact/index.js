@@ -11,13 +11,15 @@ class ContactForm extends React.Component {
       email: '',
       message: '',
       emailSent: null,
-      errors:  {name: '', company: '', email: '', message:''}
+      errors:  {name: ' ', company: '', email: '', message:''}
     };
   }
 
   handleSubmit(event){
     event.preventDefault();
-
+    let error = this.state.errors.name;
+    if(error === ''){
+      this.setState({error: 'Cannot be empty'})};
     // Post request for sendgrid.
     Axios.post('/send', this.state)
       .then(res => {
@@ -42,8 +44,6 @@ class ContactForm extends React.Component {
     this.resetForm();
   };
 
-  
-    
 
   resetForm(){
     this.setState({ name: '', company: '', email: '', message: ''})
@@ -86,13 +86,7 @@ class ContactForm extends React.Component {
   };
 
   onNameChange(event){
-    let name = this.state.name;
-    let error = this.state.errors.name;
-    if(name === ''){
-      error.name = 'Cannot be empty'
-    }else{
-      this.setState({name: event.target.value})
-    }
+    this.setState({name: event.target.value})
   };
 
   onCompanyChange(event){

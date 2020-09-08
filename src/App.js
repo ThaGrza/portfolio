@@ -1,7 +1,7 @@
 import React from 'react';
 import Homepage from "./components/pages/Homepage";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Aboutme from './components/pages/Aboutme';
+import Portfolio from './components/pages/Portfoliopage';
 import Navbar from "./components/Navbar/index";
 import Footer from "./components/Footer/index";
 import Contact from "./components/pages/Contact/index";
@@ -15,7 +15,7 @@ function App() {
       <div className="parent-container">
         <Navbar />
         <Route exact path="/" component={Homepage} />
-        <Route exact path="/about" component={Aboutme} />
+        <Route exact path="/Portfolio" component={Portfolio} />
         <Route exact path="/contact" component={Contact} />
         <Footer/>
       </div>

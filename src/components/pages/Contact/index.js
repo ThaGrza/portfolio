@@ -11,15 +11,31 @@ class ContactForm extends React.Component {
       email: '',
       message: '',
       emailSent: null,
-      errors:  {name: ' ', company: '', email: '', message:''}
+      errors:  {name: ' ', company: '', message:''}
     };
   }
 
   handleSubmit(event){
     event.preventDefault();
-    let error = this.state.errors.name;
-    if(error === ''){
-      this.setState({error: 'Cannot be empty'})};
+    let error = this.state.errors;
+    const { name, value } = event.target;
+
+    switch (name) {
+      case 'name':
+        error.name = value.length < 5 ? 'Name must be atleast 5 characters long' : '';
+        break;
+
+      case 'company':
+        error.company = value.length < 3 ? 'Company cannot be blank' : '';
+        break;
+      
+      case 'message':
+        error.message = value.length < 5 ? 'Message cannot be blank' : '';
+        break;
+
+      default:
+        break;
+    }
     // Post request for sendgrid.
     Axios.post('/send', this.state)
       .then(res => {

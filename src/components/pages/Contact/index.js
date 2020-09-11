@@ -15,29 +15,46 @@ class ContactForm extends React.Component {
     };
   }
 
+  onNameChange(event){
+    let error = this.state.errors.name;
+    let { value } = event.target;
+    error = value.length < 5 ? 'Name must be atleast 5 characters long' : '';
+
+    this.setState({name: event.target.value})
+  };
+
+  onCompanyChange(event){
+    let error = this.state.errors.company;
+    let { value } = event.target;
+    error = value.length < 3 ? 'Company cannot be left blank' : '';
+
+    this.setState({company: event.target.value})
+  };
+
+  onEmailChange(event){
+    this.setState({email: event.target.value})
+  };
+
+  onMessageChange(event){
+    let error = this.state.errors.message;
+    let { value } = event.target;
+    error = value.length < 5 ? 'Message cannot be left blank' : '';
+    this.setState({message: event.target.value})
+  };
+
+  validateForm = (errors) => {
+    let valid = true;
+    errors.value.forEach(
+      (val) => val.length > 0 && (valid = false)
+    );
+    return valid;
+  };
+
   handleSubmit(event){
     event.preventDefault();
-    let error = this.state.errors;
-    const { name, value } = event.target;
-
-    switch (name) {
-      case 'name':
-        error.name = value.length < 5 ? 'Name must be atleast 5 characters long' : '';
-        break;
-
-      case 'company':
-        error.company = value.length < 3 ? 'Company cannot be blank' : '';
-        break;
-      
-      case 'message':
-        error.message = value.length < 5 ? 'Message cannot be blank' : '';
-        break;
-
-      default:
-        break;
-    }
-    // Post request for sendgrid.
-    Axios.post('/send', this.state)
+    if(this.validateForm(this.state.errors)) {
+      // Post request for sendgrid.
+      Axios.post('/send', this.state)
       .then(res => {
         if(res.data.success){
           this.setState({
@@ -55,7 +72,11 @@ class ContactForm extends React.Component {
         });
       })
     this.resetForm();
+    }else{
+      console.log('ERROR FOUND');
+    }
   };
+    
 
 
   resetForm(){
@@ -96,22 +117,6 @@ class ContactForm extends React.Component {
         </form>
       </div>
     );
-  };
-
-  onNameChange(event){
-    this.setState({name: event.target.value})
-  };
-
-  onCompanyChange(event){
-    this.setState({company: event.target.value})
-  };
-
-  onEmailChange(event){
-    this.setState({email: event.target.value})
-  };
-
-  onMessageChange(event){
-    this.setState({message: event.target.value})
   };
 }
 

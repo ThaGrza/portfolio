@@ -42,40 +42,37 @@ class ContactForm extends React.Component {
     this.setState({message: event.target.value})
   };
 
-  validateForm = (errors) => {
-    let valid = true;
-    errors.value.forEach(
-      (val) => val.length > 0 && (valid = false)
-    );
-    return valid;
-  };
+  // validateForm = (errors) => {
+  //   let valid = true;
+  //   errors.value.forEach(
+  //     (val) => val.length > 0 && (valid = false)
+  //   );
+  //   return valid;
+  // };
 
   handleSubmit(event){
     event.preventDefault();
-    if(this.validateForm(this.state.errors)) {
-      // Post request for sendgrid.
-      Axios.post('/send', this.state)
-      .then(res => {
-        if(res.data.success){
-          this.setState({
-            emailSent: true,
-        });
-      }else {
+
+    // Post request for sendgrid.
+    Axios.post('/send', this.state)
+    .then(res => {
+      if(res.data.success){
         this.setState({
-          emailSent: false
-        });
-      }
-    })
-      .catch( err => {
-        this.setState({
-          emailSent: false
-        });
-      })
-    this.resetForm();
-    }else{
-      console.log('ERROR FOUND');
+          emailSent: true,
+      });
+    }else {
+      this.setState({
+        emailSent: false
+      });
     }
-  };
+  })
+    .catch( err => {
+      this.setState({
+        emailSent: false
+      });
+    })
+  this.resetForm();
+  }
     
 
 
@@ -93,22 +90,22 @@ class ContactForm extends React.Component {
           <div className="form-group">
             <label>
               <span className='input-error'>{this.state.errors.name}</span>
-            Name:<input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+            Name:<input type="text" required className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
             </label>
           </div>
           <div className="form-group">
             <label>
-            Company: <input type="text" className="form-control" id="company" value={this.state.company} onChange={this.onCompanyChange.bind(this)} />
+            Company: <input type="text" required className="form-control" id="company" value={this.state.company} onChange={this.onCompanyChange.bind(this)} />
             </label>
           </div>
           <div className="form-group">
             <label>
-            Email: <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+            Email: <input type="email" required className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
             </label>
           </div>
           <div className="form-group">
             <label>
-            Message: <textarea className="form-control" id="message" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+            Message: <textarea className="form-control" required id="message" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
             </label>
           </div>
           {this.state.emailSent === true && <p className="email1-alert">Email Sent!</p>}

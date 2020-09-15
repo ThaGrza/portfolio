@@ -1,22 +1,17 @@
 import React from "react";
 import Profilepic from "./profile2.png";
 import "./index.css";
+import ContactForm from "../Contact";
 
 function Homepage (props) {
   return (
   <div className="homepage-container">
     <img className="profile-pic" alt="🧙‍♂️" src={Profilepic}></img>
     <div className="homepage">
-      <p>My name is Andrew Griswold and I am a 24 year old aspiring programmer. I moved to Austin about two and a half years ago from New Hampshire with the intention 
-        of learning as much about programming as I could. I got into computers as a kid, growing up playing super mario with my dad, I fell in love. Going on to mod 
-        games like gta, I started building my own computers and was fascinated by every aspect of them. I love to learn new things and how everything works and what 
-        people can make software do. The more I learn the more I want to know just exactly what is capable with technology and how we can shape the future with it. 
-        I currently attend ACC as a computer science undergrad as well as the UT Austin BootCamp. I love robots. </p><p>My name is Andrew Griswold and I am a 24 year old aspiring programmer. I moved to Austin about two and a half years ago from New Hampshire with the intention 
-        of learning as much about programming as I could. I got into computers as a kid, growing up playing super mario with my dad, I fell in love. Going on to mod 
-        games like gta, I started building my own computers and was fascinated by every aspect of them. I love to learn new things and how everything works and what 
-        people can make software do. The more I learn the more I want to know just exactly what is capable with technology and how we can shape the future with it. 
-        I currently attend ACC as a computer science undergrad as well as the UT Austin BootCamp. I love robots.
-      </p>
+      <p>My name is Andrew Griswold and I am a 25 year old programmer. I currently live in Austin, Texas where I studied Computer Science, cybersecurity, and programming to become a full
+stack developer. My passion for computers and science grew from curiosity I got from modding video games like Grand Theft Auto and playing classic nintendo-64 games like Mario as a kid. 
+I love learning new technologies and challenging myself to create new things. You can see some open source projects I have created and worked on in the Portfolio tab, if you see anything
+that interests you or you want to get in contact for any reason, feel free to send an email via the contact page!</p>
     </div>
   </div>
   );

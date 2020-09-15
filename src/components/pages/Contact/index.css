@@ -4,7 +4,7 @@
   padding-top: 1rem;
   width: 80rem;
   border-radius: 0.5rem;
-  text-indent: 5rem;
+  /* text-indent: 5rem; */
   line-height: 2.4rem;
 }
 
@@ -19,7 +19,14 @@
 
 .contact-intro{
   font-size: 1.2rem;
-
+  margin-left: 13rem;
+  width: 50rem;
+  text-align: center;
+}
+.contact-header{
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 3rem;
 }
 
 label{

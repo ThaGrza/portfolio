@@ -83,8 +83,9 @@ class ContactForm extends React.Component {
   render() {
     return(
       <div className="contact-container">
+        <div ><h1 className="contact-header">Get in Touch</h1></div>
         <div className="contact-intro">
-          <p>Hey travelers! If you liked a project or had questions feel free to fill out the below form to get in contact with me!</p>
+          <p>Feel free to use the form below to send an email to me with any questions, concerns or opportunities! I'll get back to you as soon as possible.  </p>
         </div>
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="form-group">

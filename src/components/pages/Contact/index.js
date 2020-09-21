@@ -11,23 +11,14 @@ class ContactForm extends React.Component {
       email: '',
       message: '',
       emailSent: null,
-      errors:  {name: ' ', company: '', message:''}
     };
   }
 
   onNameChange(event){
-    let error = this.state.errors.name;
-    let { value } = event.target;
-    error = value.length < 5 ? 'Name must be atleast 5 characters long' : '';
-
     this.setState({name: event.target.value})
   };
 
   onCompanyChange(event){
-    let error = this.state.errors.company;
-    let { value } = event.target;
-    error = value.length < 3 ? 'Company cannot be left blank' : '';
-
     this.setState({company: event.target.value})
   };
 
@@ -36,19 +27,8 @@ class ContactForm extends React.Component {
   };
 
   onMessageChange(event){
-    let error = this.state.errors.message;
-    let { value } = event.target;
-    error = value.length < 5 ? 'Message cannot be left blank' : '';
     this.setState({message: event.target.value})
   };
-
-  // validateForm = (errors) => {
-  //   let valid = true;
-  //   errors.value.forEach(
-  //     (val) => val.length > 0 && (valid = false)
-  //   );
-  //   return valid;
-  // };
 
   handleSubmit(event){
     event.preventDefault();
@@ -90,7 +70,6 @@ class ContactForm extends React.Component {
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="form-group">
             <label>
-              <span className='input-error'>{this.state.errors.name}</span>
             Name:<input type="text" required className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
             </label>
           </div>

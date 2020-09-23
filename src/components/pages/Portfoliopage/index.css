@@ -3,4 +3,5 @@
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   width: 1280px;
+  min-height: 100%;
 }

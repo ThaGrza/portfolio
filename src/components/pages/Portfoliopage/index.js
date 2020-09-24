@@ -3,6 +3,7 @@ import Websites from "../../../websites.json";
 import Card from "../../Card/index.js";
 import "../../Card/index.css";
 import "./index.css";
+import Footer from "../../Footer/index";
 
 
 function Portfolio (props) {
@@ -17,6 +18,7 @@ function Portfolio (props) {
     url={Websites.url}
     />
     ))}
+    <Footer />
   </div>
   );
   };

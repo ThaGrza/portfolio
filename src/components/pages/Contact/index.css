@@ -1,10 +1,15 @@
 .contact-container{
+  min-height: 100vh;
+  position: relative;
+}
+
+
+.form-container{
   background-color: #fff;
   margin-top: 4rem;
   padding-top: 1rem;
   width: 80rem;
   border-radius: 0.5rem;
-  /* text-indent: 5rem; */
   line-height: 2.4rem;
 }
 

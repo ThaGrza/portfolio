@@ -14,6 +14,7 @@ code {
 }
 
 .parent-container {
+position: relative;
   display: grid;
   place-items: center;
 }

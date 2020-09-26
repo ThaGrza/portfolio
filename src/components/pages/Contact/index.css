@@ -1,35 +1,40 @@
 .contact-container{
+  display: flex;
   min-height: 100vh;
   position: relative;
-  display: flex;
-  width: 80%;
 }
 
+.contact-image{
+  height: 50%;
+  float: right;
+}
 
 .form-container{
+  width: 80%;
   background-color: #fff;
   margin-top: 4rem;
   padding-top: 1rem;
-  /* width: 80rem; */
   border-radius: 0.5rem;
   line-height: 2.4rem;
+  height: fit-content;
+  width: fit-content;
 }
 
 #contact-form{
+  float: left;
   padding: 0 1.5rem 1rem 1.5rem;
   font-size: 1.3rem;
   font-family: sans-serif;
   display: grid;
   grid-gap: 1.5rem;
-  /* background-color: grey; */
 }
 
 .contact-intro{
+  margin-left: 1rem;
   font-size: 1.2rem;
-  margin-left: 13rem;
-  /* width: 50rem; */
   text-align: center;
 }
+
 .contact-header{
   margin-top: 1rem;
   text-align: center;
@@ -41,9 +46,8 @@ label{
   flex-direction: row;
   justify-content: flex-end;
   text-align: right;
-  width: 30rem;
+  /* width: 30rem; */
   line-height: 2rem;
-  /* margin-bottom: .5rem; */
 }
 
 input, textarea{

@@ -7,16 +7,11 @@
 }
 
 .homepage {
-  text-emphasis: wrap;
-  padding-top: 1rem;
   border-radius: 0.5rem;
   background-color: #fff;
   padding: 0 1.5rem 1rem 1.5rem;
   font-size: 24px;
-  font-family: sans-serif;
-  font-weight: 1100;
-  font-display: block;
-  text-indent: 5rem;
+  text-indent: 3rem;
   line-height: 2.4rem;
   height: fit-content;
   opacity: .9;
@@ -28,4 +23,20 @@
   padding: 1rem;
   height: 22.8rem;
   max-width: 100%;
+}
+
+.header{
+  text-align: center;
+  margin-right: 10%;
+}
+
+.skills-header{
+  text-align: center;
+  margin-right: 10%;
+}
+
+.skills-list{
+  text-align: center; 
+  list-style-type: none;
+  margin-right: 10%;
 }

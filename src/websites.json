@@ -6,11 +6,11 @@
   "url": "https://thagrza.github.io/trainScheduler/"
 },
 {
-  "name": "Train Scheduler",
-  "image": "https://media.makeameme.org/created/coming-soon-42e33c42eb.jpg",
-  "tech": "Coming Soon",
-  "githubUrl": "https://www.github.com",
-  "url":""
+  "name": "South Park Memory Game",
+  "image": "https://raw.githubusercontent.com/ThaGrza/Memory-Game/master/src/images/screenshot.png",
+  "tech": "Javascript, React, Netlify",
+  "githubUrl": "https://github.com/ThaGrza/Memory-Game",
+  "url":"https://southpark-memory-game.netlify.app"
 },
 {
   "name": "Train Scheduler",

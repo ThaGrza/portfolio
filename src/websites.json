@@ -1,7 +1,7 @@
 [{
   "name": "Train Scheduler",
   "image": "https://raw.githubusercontent.com/ThaGrza/trainScheduler/master/assets/images/screenshot.png",
-  "tech": "Javascript, React, Firebase",
+  "tech": "Html, Javascript, Firebase",
   "githubUrl": "https://github.com/ThaGrza/trainScheduler",
   "url": "https://thagrza.github.io/trainScheduler/"
 },
@@ -15,7 +15,7 @@
 {
   "name": "Friend Finder",
   "image": "https://raw.githubusercontent.com/ThaGrza/Friend-Finder/master/assets/images/screenshot.png",
-  "tech": "Html, Javascript",
+  "tech": "Html, Javascript, Node.js",
   "githubUrl": "https://github.com/ThaGrza/Friend-Finder",
   "url":"https://friendfindeer.herokuapp.com/"
 },

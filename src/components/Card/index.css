@@ -3,7 +3,7 @@
   margin: 2rem;
   padding: 1rem;
   border-radius: 0.7rem;
-  height: 24rem;
+  height: 22rem;
   width: 300px;
 }
 
@@ -14,4 +14,13 @@ object-fit: cover;
 border-radius: 1rem;
 border-color: black;
 object-position: center;
+
+}
+
+.card-info-container {
+  border-top: .13rem;
+  border-color: rgb(80, 80, 80);
+  border-style: solid none none none;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }

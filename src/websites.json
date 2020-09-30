@@ -13,11 +13,11 @@
   "url":"https://southpark-memory-game.netlify.app"
 },
 {
-  "name": "Train Scheduler",
-  "image": "https://media.makeameme.org/created/coming-soon-42e33c42eb.jpg",
-  "tech": "Coming Soon",
-  "githubUrl": "https://www.github.com",
-  "url":""
+  "name": "Friend Finder",
+  "image": "https://raw.githubusercontent.com/ThaGrza/Friend-Finder/master/assets/images/screenshot.png",
+  "tech": "Html, Javascript",
+  "githubUrl": "https://github.com/ThaGrza/Friend-Finder",
+  "url":"https://friendfindeer.herokuapp.com/"
 },
 {
   "name": "Train Scheduler",

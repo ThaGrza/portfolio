@@ -5,7 +5,12 @@
   border-radius: 0.7rem;
   height: 22rem;
   width: 300px;
+  transition: transform .3s;
 }
+.card-component:hover{
+  transform: scale(1.1);
+}
+
 
 .card-img {
 width: 100%;

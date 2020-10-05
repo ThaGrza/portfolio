@@ -27,11 +27,11 @@
   "url":"https://thagrza.github.io/JewelCollector/"
 },
 {
-  "name": "Train Scheduler",
-  "image": "https://media.makeameme.org/created/coming-soon-42e33c42eb.jpg",
-  "tech": "Coming Soon",
-  "githubUrl": "https://www.github.com",
-  "url":""
+  "name": "Giftastic",
+  "image": "https://raw.githubusercontent.com/ThaGrza/Giftastic/master/assets/screenshot.png",
+  "tech": "html, Javascript, Jquery",
+  "githubUrl": "https://github.com/ThaGrza/Giftastic",
+  "url":"https://thagrza.github.io/Giftastic/"
 },
 {
   "name": "Train Scheduler",

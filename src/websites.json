@@ -34,14 +34,14 @@
   "url":"https://thagrza.github.io/Giftastic/"
 },
 {
-  "name": "Train Scheduler",
-  "image": "https://media.makeameme.org/created/coming-soon-42e33c42eb.jpg",
-  "tech": "Coming Soon",
-  "githubUrl": "https://www.github.com",
-  "url":""
+  "name": "Gumball Movies",
+  "image": "https://raw.githubusercontent.com/ThaGrza/gumballmovies/main/src/screenshot.png",
+  "tech": "Javascript, React",
+  "githubUrl": "https://github.com/ThaGrza/gumballmovies",
+  "url":"https://gumballmovies.netlify.app/"
 },
 {
-  "name": "Train Scheduler",
+  "name": "Coming Soon",
   "image": "https://media.makeameme.org/created/coming-soon-42e33c42eb.jpg",
   "tech": "Coming Soon",
   "githubUrl": "https://www.github.com",

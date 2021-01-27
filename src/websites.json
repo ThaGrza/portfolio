@@ -1,50 +1,50 @@
 [{
   "name": "Train Scheduler",
   "image": "https://raw.githubusercontent.com/ThaGrza/trainScheduler/master/assets/images/screenshot.png",
-  "tech": "Html, Javascript, Firebase",
+  "tech": "Html, Javascript, Firebase, Css",
   "githubUrl": "https://github.com/ThaGrza/trainScheduler",
   "url": "https://thagrza.github.io/trainScheduler/"
 },
 {
   "name": "South Park Memory Game",
   "image": "https://raw.githubusercontent.com/ThaGrza/Memory-Game/master/src/images/screenshot.png",
-  "tech": "Javascript, React, Netlify",
+  "tech": "Javascript, React, Css",
   "githubUrl": "https://github.com/ThaGrza/Memory-Game",
   "url":"https://southpark-memory-game.netlify.app"
 },
 {
   "name": "Friend Finder",
   "image": "https://raw.githubusercontent.com/ThaGrza/Friend-Finder/master/assets/images/screenshot.png",
-  "tech": "Html, Javascript, Node.js",
+  "tech": "Html, Javascript, Node.js, Css",
   "githubUrl": "https://github.com/ThaGrza/Friend-Finder",
   "url":"https://friendfindeer.herokuapp.com/"
 },
 {
   "name": "Jewel Collector",
   "image": "https://raw.githubusercontent.com/ThaGrza/JewelCollector/master/assets/images/screenshot.png",
-  "tech": "Javascript, Jquery",
+  "tech": "Javascript, Jquery, Css",
   "githubUrl": "https://github.com/ThaGrza/JewelCollector",
   "url":"https://thagrza.github.io/JewelCollector/"
 },
 {
   "name": "Giftastic",
   "image": "https://raw.githubusercontent.com/ThaGrza/Giftastic/master/assets/screenshot.png",
-  "tech": "html, Javascript, Jquery",
+  "tech": "html, Javascript, Jquery, Css",
   "githubUrl": "https://github.com/ThaGrza/Giftastic",
   "url":"https://thagrza.github.io/Giftastic/"
 },
 {
   "name": "Gumball Movies",
   "image": "https://raw.githubusercontent.com/ThaGrza/gumballmovies/main/src/screenshot.png",
-  "tech": "Javascript, React",
+  "tech": "Javascript, React, Css",
   "githubUrl": "https://github.com/ThaGrza/gumballmovies",
   "url":"https://gumballmovies.netlify.app/"
 },
 {
-  "name": "Coming Soon",
-  "image": "https://media.makeameme.org/created/coming-soon-42e33c42eb.jpg",
-  "tech": "Coming Soon",
-  "githubUrl": "https://www.github.com",
+  "name": "Netflix Clone",
+  "image": "https://raw.githubusercontent.com/ThaGrza/Netflix-clone/main/src/screenshot.png",
+  "tech": "Javascript, React, Css",
+  "githubUrl": "https://github.com/ThaGrza/Netflix-clone",
   "url":""
 },
 {

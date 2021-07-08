@@ -2,7 +2,6 @@
   display: grid;
   overflow-y: scrollable
 }
-
 .nameHeader{
   font-family: 'Otomanopee One', sans-serif;
   font-size: 48px;
@@ -10,7 +9,6 @@
   color: white;
   font-weight: bolder;
 }
-
 .headerSubtext{
   font-family: 'Otomanopee One', sans-serif;
   font-size: 24px;
@@ -18,9 +16,61 @@
   color: white;
   font-weight:800;
 }
-
 .scrollButton{
   color: white;
   height: 50px;
   width: auto;
+}
+
+
+/* ABOUT ME CSS */
+.aboutMe{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: white;
+  justify-content: center;
+}
+.aboutHeader{
+  grid-column-start: 2;
+}
+.headshot{
+  grid-column-start: 1;
+}
+.aboutText{
+  text-align: center;
+}
+
+
+/* EDUCATION CSS  */
+
+
+.edu{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: red;
+  justify-content: center;
+}
+.eduHeader{
+  grid-column-start: 1;
+}
+.eduText{
+  text-align: center;
+}
+
+
+/* SKILLS CSS */
+
+
+.skills{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: blueviolet;
+}
+.skillsHeader{
+  grid-column-start: 1;
+
+}
+.skillsGraph{
+  text-align: center;
 }

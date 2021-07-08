@@ -1,5 +1,6 @@
 .homepage-container{
   display: grid;
+  overflow-y: scrollable
 }
 
 .nameHeader{
@@ -16,4 +17,10 @@
   text-align: center;
   color: white;
   font-weight:800;
+}
+
+.scrollButton{
+  color: white;
+  height: 50px;
+  width: auto;
 }

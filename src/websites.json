@@ -20,11 +20,11 @@
   "url":"https://friendfindeer.herokuapp.com/"
 },
 {
-  "name": "Jewel Collector",
-  "image": "https://raw.githubusercontent.com/ThaGrza/JewelCollector/master/assets/images/screenshot.png",
+  "name": "Morty Collector",
+  "image": "https://raw.githubusercontent.com/ThaGrza/Morty-Collector/master/assets/images/websiteImage/screenshot.png",
   "tech": "Javascript, Jquery, Css",
-  "githubUrl": "https://github.com/ThaGrza/JewelCollector",
-  "url":"https://thagrza.github.io/JewelCollector/"
+  "githubUrl": "https://github.com/ThaGrza/Morty-Collector",
+  "url":"https://thagrza.github.io/Morty-Collector/"
 },
 {
   "name": "Giftastic",

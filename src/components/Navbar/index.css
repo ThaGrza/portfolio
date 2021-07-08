@@ -1,5 +1,6 @@
 .nav-container{
   position: relative;
+  top: 0;
   display: flex;
   width: 100%;
   background-color: #fff;

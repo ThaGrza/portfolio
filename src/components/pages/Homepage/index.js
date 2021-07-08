@@ -1,13 +1,14 @@
 import React from "react";
 import "./index.css";
 import { ProfilePic } from "./profilePic.png";
+import { Background } from "../../../maybeContactPage.jpeg";
 
 function Homepage () {
   return (
   <div className="homepage-container">
     <div className="headerContainer">
       <h1 className="nameHeader">I'm Andrew Griswold.</h1>
-      <h3 className="headerSubtext">I am a fullstack software engineer based in Boston, Massachusetts</h3>
+      <h3 className="headerSubtext">A fullstack software engineer based in Boston, Massachusetts</h3>
     </div>
     <div className="aboutMe">
       <h1 className="aboutHeader">About Me</h1>

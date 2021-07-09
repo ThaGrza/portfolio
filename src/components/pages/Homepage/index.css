@@ -35,49 +35,84 @@
 
 
 .aboutMe{
+  height: 300px;
   position: relative;
   display: grid;
   grid-template-columns: 40% 60%;
-  background-color: white;
-  justify-content: center;
+  background-color: #464545;
+  color: whitesmoke;
+  border-bottom:black;
+  border-width: 1px;
+  border-bottom-style: solid;
+  padding-bottom: 50px;
 }
 .aboutHeader{
+  padding-left: 120px;
   grid-column-start: 2;
+  font-weight: bolder;
+  font-size: 36px;
 }
 .headshot{
   grid-column-start: 1;
+  height: 250px;
+  border-radius: 50%;
+  justify-self: center;
 }
 .aboutText{
-  text-align: center;
+  grid-column-start: 2;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 
 .edu{
+  height: 300px;
+  color: rgb(46, 46, 46);
   position: relative;
   display: grid;
   grid-template-columns: 40% 60%;
-  background-color: red;
-  justify-content: center;
+  background-color: whitesmoke;
+  align-content: center;
+  border-bottom:black;
+  border-width: 1px;
+  border-bottom-style: solid;
 }
 .eduHeader{
+  text-align: center;
   grid-column-start: 1;
 }
-.eduText{
+.eduInfo{
+  grid-column-start: 2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.listElement{
+  font-size: 18px;
+  font-weight: 400;
   text-align: center;
+  text-decoration: none;
 }
 
 
 .skills{
+  height: 300px;
+  color: rgb(46, 46, 46);
   position: relative;
-  justify-content: center;
+  align-content: center;
   display: grid;
   grid-template-columns: 40% 60%;
-  background-color: blueviolet;
+  background-color: whitesmoke;
+  border-bottom: thistle;
 }
 .skillsHeader{
+  text-align: center;
   grid-column-start: 1;
 
 }
 .skillsGraph{
+  grid-column-start: 2;
+  font-size: 18px;
+  font-weight: 400;
   text-align: center;
 }

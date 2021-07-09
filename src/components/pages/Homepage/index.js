@@ -1,6 +1,8 @@
 import React from "react";
 import "./index.css";
 import profilePic from "./profilePic.png";
+import SkillsList from "../../../skillList.json"; 
+import Skill from "../../Skill/index.js";
 // import Footer from "../../Footer/index.js";
 
 function Homepage () {
@@ -28,7 +30,14 @@ function Homepage () {
     </div>
     <div className="skills">
       <h1 className="skillsHeader">Skills & Experience</h1>
-      <span className="skillsGraph"> Javascript, css, html, mongosb, mysql, postgreSQL, Pyhton, Golang</span>
+      <div className="skillBars">
+        {SkillsList.map(SkillsList => (
+          <Skill
+          title={SkillsList.title}
+          value={SkillsList.vale}
+          />
+        ))}
+      </div>
     </div>
     {/* <Footer /> */}
   </div>

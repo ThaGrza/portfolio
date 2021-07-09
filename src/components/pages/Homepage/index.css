@@ -4,7 +4,7 @@
   width: 100vw;
 }
 .headerContainer{
-  background-image: url("../../../maybeContactPage.jpeg");
+  background-image: url("../../../images/backgroundImage.webp");
   position: relative;
   left: 0;
   right: 0;
@@ -96,7 +96,7 @@
 
 
 .skills{
-  height: 300px;
+  height: 800px;
   color: rgb(46, 46, 46);
   position: relative;
   align-content: center;
@@ -106,6 +106,7 @@
   border-bottom: thistle;
 }
 .skillsHeader{
+  /* position: absolute; */
   text-align: center;
   grid-column-start: 1;
 
@@ -115,4 +116,20 @@
   font-size: 18px;
   font-weight: 400;
   text-align: center;
+}
+.skill{
+display: grid;
+grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+.skillHeader{
+  color: red;
+}
+.skillsBar{
+  grid-column-start: 2;
+}
+.skillPercent{
+  height: 20px;
+  /* width: 200px; */
+  grid-column-start: 1;
+  background-color: black;
 }

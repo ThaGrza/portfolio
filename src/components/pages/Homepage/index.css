@@ -4,7 +4,8 @@
   width: 100vw;
 }
 .headerContainer{
-  background-image: url("../../../images/backgroundImage.webp");
+  background-image: url("../../../images/sunsetMountain.webp");
+  background-size: cover;
   position: relative;
   left: 0;
   right: 0;
@@ -119,35 +120,46 @@
   font-weight: 400;
   text-align: center;
 }
+
 .skill{
-display: grid;
-grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
 height: 100px;
 }
+
 .skillHeader{
   color: red;
 }
+
 .skillsBar{
-  grid-column-start: 2;
-  grid-column-end: 10;
+  /* grid-column-start: 2;
+  grid-column-end: 10; */
 }
-.skillPercent{
+
+.skillPercentOutline{
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   height: 20px;
-  /* width: 200px; */
+  width: 800px;
   grid-column-start: 1;
-  background-color: black;
-  border-width: 2px;
+  grid-column-end: 10;
+  background-color: grey;
+  border-width: 1px;
   border-color: black;
   border-style: solid;
 }
+
+.skillPercent{
+  grid-column-start: 1;
+  background-color: black;
+}
+
 .skillIcon{
   height: 20px;
   width: auto;
 }
+
 .percentStart{
   padding: 0;
   grid-column-start: 1;
-
 }
 
 .percentEnd{

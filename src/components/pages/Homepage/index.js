@@ -20,7 +20,6 @@ to help myself grow as a developer.
 I learned the basics of programming from Austin Community College and went on to learn full stack web development
 through a bootcamp at The University of Texas at Austin. I continued learning fullstack development on my own while building 
 various websites and apps.
-
 I am currently freelancing and contributing to open source as I look for more perminent opportunities.
       </p>
     </div>

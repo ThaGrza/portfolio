@@ -99,7 +99,7 @@
 
 
 .skills{
-  height: 800px;
+  height: auto;
   color: rgb(46, 46, 46);
   position: relative;
   align-content: center;
@@ -122,28 +122,40 @@
 }
 
 .skill{
-height: 100px;
+  height: 100px;
+  margin-bottom: 10px;
 }
 
 .skillHeader{
-  color: red;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 28px;
+  font-weight:500;
+  text-align: center;
 }
 
-.skillsBar{
-  /* grid-column-start: 2;
-  grid-column-end: 10; */
+.skillBars{
+  grid-column-start: 2;
+  justify-content: center;
+  align-content: center;
+}
+
+.skillHeaderContainer{
+  display: flex;
+  flex-direction: row;
 }
 
 .skillPercentOutline{
   display: grid;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  height: 20px;
+  height: 25px;
   width: 800px;
   grid-column-start: 1;
   grid-column-end: 10;
   background-color: grey;
   border-width: 1px;
-  border-color: black;
+  border-color: grey;
   border-style: solid;
 }
 
@@ -153,8 +165,9 @@ height: 100px;
 }
 
 .skillIcon{
-  height: 20px;
+  height: 40px;
   width: auto;
+  margin-right: 10px;
 }
 
 .percentStart{
@@ -165,4 +178,20 @@ height: 100px;
 .percentEnd{
   padding: 0;
   grid-column-end: 10;
+}
+
+.experienceContainer{
+  grid-column-start: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.experienceStory{
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 30px;
 }

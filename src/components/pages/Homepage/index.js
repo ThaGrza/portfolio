@@ -34,13 +34,23 @@ I am currently freelancing and contributing to open source as I look for more pe
     </div>
     <div className="skills">
       <h1 className="skillsHeader">Skills & Experience</h1>
+      <div className="experienceContainer">
+        <p className="experienceStory">This is a story about some of the stuff ive done</p>
+        <p className="experienceStory">Omg heres another one about this super cool thing</p>
+        <p className="experienceStory">Wow everything im typing is relatively the same length</p>
+        <p className="experienceStory">This is about I did something and Learned something</p>
+        <p className="experienceStory">Ok this is the last thing ive learned im all out</p>
+      </div>
       <div className="skillBars">
-        {SkillsList.map(SkillsList => (
-          <Skill
-          title={SkillsList.title}
-          value={SkillsList.value}
-          />
-        ))}
+        <div className="skillBars">
+          {SkillsList.map(SkillsList => (
+            <Skill
+            title={SkillsList.title}
+            icon={SkillsList.icon}
+            value={SkillsList.value}
+            />
+          ))}
+        </div>
       </div>
     </div>
     {/* <Footer /> */}

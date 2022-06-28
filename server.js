@@ -23,10 +23,10 @@ app.post('/send', (req, res, next) => {
 
   const msg = {
     to: 'andrewgriswold7@gmail.com',
-    from: 'andrewgriswold7@gmail.com',
+    from: req.body.email,
     subject: req.body.name,
     text: req.body.email + req.body.company + req.body.message,
-    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+    html: '<strong>Testing testing I think its not working because sendgrid account approval needed</strong>',
   }
 
   sgMail.send(msg)

@@ -9,7 +9,7 @@ function Homepage () {
   return (
   <div className="homepage-container">
     <div className="headerContainer">
-      <h1 className="nameHeader">I'm Andrew Griswold.</h1>
+      <h1 className="nameHeader">Andrew Griswold</h1>
     </div>
     <div className="aboutMe">
       <h1 className="aboutHeader">About Me</h1>

@@ -3,26 +3,23 @@
   top: 0;
   display: flex;
   width: 100%;
-  background-color: #fff;
   justify-content: space-between;
   align-items: center;
 }
 
 .page-title-container{
-  display: flex;
   margin: 0 1.7rem 0 1.7rem;
 
 }
 .page-title{
-  color: black;
+  color: whitesmoke;
 }
 
 .nav-links-container{
   display: flex;
-
 }
 .nav-links{
-  color: black;
+  color: whitesmoke;
   margin: 0 1.7rem 0 1.7rem;
 
 }
@@ -30,12 +27,3 @@
 h1{
   margin: 0;
 }
-
-/* 
-position: absolute;
-  margin-left: auto;
-  max-width 1290 THEN SHRINK
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center; */

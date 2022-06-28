@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = props => (
   <div className="card-component">
-    <a  className="img-container" target="_blank" rel="noopener noreferrer" href={props.url}>
+    <a className="img-container" target="_blank" rel="noopener noreferrer" href={props.url}>
       <img className="card-img" alt=":(" src={props.image} />
     </a>
     <div className="card-info-container">

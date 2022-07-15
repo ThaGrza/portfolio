@@ -1,9 +1,9 @@
 body {
-  background-image: url("../src/images/napalBackground.avif");
+  background-image: url("../src/images/backgroundImage.webp");
   background-size: cover;
   overflow-x: hidden;
   margin: 0;
-  font-family: 'Otomanopee One', sans-serif;
+  font-family: sans-serif;
   min-height: 100%;
 }
 

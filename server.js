@@ -6,9 +6,7 @@ require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-
 app.use(bodyParser.json());
-
 app.use(cors());
 
 app.use((req, res, next) => {
@@ -17,10 +15,11 @@ app.use((req, res, next) => {
   next();
 })
 
-app.post('/send', (req, res, next) => {
-  sgMail.setApiKey(process.env.SG_KEY);
-  console.log(req.body);
 
+app.post('/send', (req, res, next) => {
+  sgMail.setApiKey(process.env.REACT_APP_API_KEY);
+  console.log(req.body);
+  console.log()
   const msg = {
     to: 'andrewgriswold7@gmail.com',
     from: req.body.email,

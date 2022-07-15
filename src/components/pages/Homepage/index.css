@@ -8,6 +8,7 @@
   left: 0;
   right: 0;
   height: 100%;
+  text-align: center;
 }
 .nameHeader{
   font-family: 'Otomanopee One', sans-serif;
@@ -17,6 +18,11 @@
   font-weight: bolder;
   padding-top: 300px;
 }
+.name-title-header{
+  font-family: 'Otomanopee One', sans-serif;
+  color: white;
+  font-size: 32px;
+}
 
 /* ADD SCROLL BUTTON ARROW TO SHOW YOU CAN SCROLL FOR CONTENT */
 .scrollButton{
@@ -25,12 +31,8 @@
   width: 50px;
 }
 
-
 .aboutMe{
-  height: 300px;
-  /* position: relative; */
-  display: grid;
-  grid-template-columns: 40% 60%;
+  text-align: center;
   background-color: #464545;
   color: whitesmoke;
   border-bottom:black;
@@ -38,25 +40,29 @@
   border-bottom-style: solid;
   padding-bottom: 50px;
 }
+
 .aboutHeader{
-  padding-left: 120px;
-  grid-column-start: 2;
+  padding: 10px;
   font-weight: bolder;
   font-size: 36px;
 }
+
 .headshot{
-  grid-column-start: 1;
   height: 250px;
   border-radius: 50%;
-  justify-self: center;
 }
+.about-text-container{
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
 .aboutText{
-  grid-column-start: 2;
   font-size: 18px;
+  line-height: 1.5rem;
   font-weight: 400;
   text-indent: 20px;
 }
-
 
 .edu{
   height: 400px;
@@ -70,10 +76,12 @@
   border-width: 1px;
   border-bottom-style: solid;
 }
+
 .eduHeader{
   text-align: center;
   grid-column-start: 1;
 }
+
 .eduInfo{
   grid-column-start: 2;
   font-size: 18px;

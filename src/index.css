@@ -10,9 +10,3 @@ body {
 code {
   font-family: 'Nunito Sans';
 }
-
-.parent-container {
-  position: relative;
-  display: grid;
-  place-items: center;
-}

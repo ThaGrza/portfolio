@@ -42,7 +42,8 @@
 }
 
 .aboutHeader{
-  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 20px;
   font-weight: bolder;
   font-size: 36px;
 }
@@ -58,8 +59,8 @@
 }
 
 .aboutText{
-  font-size: 18px;
-  line-height: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
   font-weight: 400;
   text-indent: 20px;
 }
@@ -68,10 +69,10 @@
   height: 400px;
   color: rgb(46, 46, 46);
   position: relative;
-  display: grid;
   grid-template-columns: 40% 60%;
   background-color: whitesmoke;
   align-content: center;
+  text-align: center;
   border-bottom:black;
   border-width: 1px;
   border-bottom-style: solid;
@@ -109,15 +110,14 @@
   color: rgb(46, 46, 46);
   position: relative;
   align-content: center;
-  display: grid;
+  text-align: center;
   grid-template-columns: 40% 60%;
   background-color: whitesmoke;
   border-bottom: thistle;
 }
 .skillsHeader{
-  /* position: absolute; */
+  padding-top: 10px;
   text-align: center;
-  grid-column-start: 1;
 
 }
 .skillsGraph{

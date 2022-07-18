@@ -44,17 +44,6 @@ function Homepage () {
         <p className="experienceStory">This is about I did something and Learned something</p>
         <p className="experienceStory">Ok this is the last thing ive learned im all out</p>
       </div>
-      <div className="skillBars">
-        <div className="skillBars">
-          {SkillsList.map(SkillsList => (
-            <Skill
-            title={SkillsList.title}
-            icon={SkillsList.icon}
-            value={SkillsList.value}
-            />
-          ))}
-        </div>
-      </div>
     </div>
     {/* <Footer /> */}
   </div>

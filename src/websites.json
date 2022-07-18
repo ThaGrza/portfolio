@@ -34,10 +34,10 @@
   "url":"https://thagrza.github.io/Giftastic/"
 },
 {
-  "name": "Gumball Movies",
-  "image": "https://raw.githubusercontent.com/ThaGrza/gumballmovies/main/src/screenshot.png",
+  "name": "Movie Jeeves",
+  "image": "https://raw.githubusercontent.com/ThaGrza/movieApp/main/assets/Screenshot.png",
   "tech": "Javascript, React, Css",
-  "githubUrl": "https://github.com/ThaGrza/gumballmovies",
+  "githubUrl": "https://github.com/ThaGrza/movieApp",
   "url":"https://gumballmovies.netlify.app/"
 },
 {

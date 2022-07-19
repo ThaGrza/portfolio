@@ -1,9 +1,10 @@
 body {
-  background-image: url("../src/images/backgroundImage.webp");
+  background-image: url("../src/assets/images/backgroundImage.webp");
   background-size: cover;
   overflow-x: hidden;
   margin: 0;
   font-family: sans-serif;
+  font-size: 16px;
   min-height: 100%;
 }
 

@@ -13,9 +13,13 @@ function Portfolio (props) {
     <Card
     image={Websites.image}
     tech={Websites.tech}
+    tech2={Websites.tech2}
+    tech3={Websites.tech3}
+    tech4={Websites.tech4}
     githubUrl={Websites.githubUrl}
     name={Websites.name}
     url={Websites.url}
+    description={Websites.description}
     />
     ))}
     <Footer />

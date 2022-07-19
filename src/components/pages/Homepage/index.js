@@ -1,8 +1,6 @@
 import React from "react";
 import "./index.css";
 import profilePic from "./profilePic.png";
-import SkillsList from "../../../skillList.json"; 
-import Skill from "../../Skill/index.js";
 // import Footer from "../../Footer/index.js";
 
 function Homepage () {

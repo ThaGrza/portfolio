@@ -1,53 +1,71 @@
 [{
+    "name": "Netflix Clone",
+    "image": "https://raw.githubusercontent.com/ThaGrza/Netflix-clone/main/src/screenshot.png",
+    "tech": "https://img.icons8.com/color/48/000000/javascript.png",
+    "tech2":  "https://img.icons8.com/color/48/000000/react-native.png",
+    "tech3":  "https://img.icons8.com/color/48/000000/css3.png",
+    "githubUrl": "https://github.com/ThaGrza/Netflix-clone",
+    "url":"",
+    "description": "Netflix Clone is the frontend of Netflix with much less fetures. You can scroll throught the movie selections and watch the trailers. I built this project to practice my CSS skills and design insight."
+  },
+  {
+    "name": "Morty Collector",
+    "image": "https://raw.githubusercontent.com/ThaGrza/Morty-Collector/master/assets/images/websiteImage/screenshot.png",
+    "tech": "https://img.icons8.com/color/48/000000/javascript.png",
+    "tech2":  "https://img.icons8.com/color/48/000000/react-native.png",
+    "tech3":  "https://img.icons8.com/color/48/000000/css3.png",
+    "githubUrl": "https://github.com/ThaGrza/Morty-Collector",
+    "url":"https://thagrza.github.io/Morty-Collector/",
+    "description": "Morty Collector is a collecting game based on numbers. You are given a target score to reach using 4 different valued Morty’s. Each Morty’s value is hidden but can be learned by clicking on them and seeing your current score increase by the value it had. Match the target score and your score to collect the Morty you made the winning match with. Morty Collector uses JQuery to have onClick events along with functional programming to update the DOM based on user events."
+  },
+  {
   "name": "Train Scheduler",
   "image": "https://raw.githubusercontent.com/ThaGrza/trainScheduler/master/assets/images/screenshot.png",
   "tech": "https://img.icons8.com/color/48/000000/javascript.png",
   "tech2":  "https://img.icons8.com/color/48/000000/html-5--v1.png",
   "tech3":  "https://img.icons8.com/color/48/000000/css3.png",
   "githubUrl": "https://github.com/ThaGrza/trainScheduler",
-  "url": "https://thagrza.github.io/trainScheduler/"
+  "url": "https://thagrza.github.io/trainScheduler/",
+  "description": "Giftastic is a simple site for searching for Gifs. There is a search bar used to search/ add new gifs. Giftastic uses Jquery to grab the inputs of user’s, thening using the Giphy api and ajax, requests all gifs with that/those keywords entered."
 },
 {
   "name": "South Park Memory Game",
   "image": "https://raw.githubusercontent.com/ThaGrza/Memory-Game/master/src/images/screenshot.png",
-  "tech": "Javascript, React, Css",
+  "tech": "https://img.icons8.com/color/48/000000/javascript.png",
+  "tech2":  "https://img.icons8.com/color/48/000000/react-native.png",
+  "tech3":  "https://img.icons8.com/color/48/000000/css3.png",
   "githubUrl": "https://github.com/ThaGrza/Memory-Game",
-  "url":"https://southpark-memory-game.netlify.app"
+  "url":"https://southpark-memory-game.netlify.app",
+  "description": "Giftastic is a simple site for searching for Gifs. There is a search bar used to search/ add new gifs. Giftastic uses Jquery to grab the inputs of user’s, thening using the Giphy api and ajax, requests all gifs with that/those keywords entered."
 },
 {
   "name": "Friend Finder",
   "image": "https://raw.githubusercontent.com/ThaGrza/Friend-Finder/master/assets/images/screenshot.png",
-  "tech": "Html, Javascript, Node.js, Css",
+  "tech": "https://img.icons8.com/color/48/000000/javascript.png",
+  "tech2":  "https://img.icons8.com/color/48/000000/react-native.png",
+  "tech3":  "https://img.icons8.com/color/48/000000/css3.png",
   "githubUrl": "https://github.com/ThaGrza/Friend-Finder",
-  "url":"https://friendfindeer.herokuapp.com/"
-},
-{
-  "name": "Morty Collector",
-  "image": "https://raw.githubusercontent.com/ThaGrza/Morty-Collector/master/assets/images/websiteImage/screenshot.png",
-  "tech": "Javascript, Jquery, Css",
-  "githubUrl": "https://github.com/ThaGrza/Morty-Collector",
-  "url":"https://thagrza.github.io/Morty-Collector/",
-  "description": "Morty Collector is a collecting game based on numbers. You are given a target score to reach using 4 different valued Morty’s. Each Morty’s value is hidden but can be learned by clicking on them and seeing your current score increase by the value it had. Match the target score and your score to collect the Morty you made the winning match with. Morty Collector uses JQuery to have onClick events along with functional programming to update the DOM based on user events."
+  "url":"https://friendfindeer.herokuapp.com/",
+  "description": "Giftastic is a simple site for searching for Gifs. There is a search bar used to search/ add new gifs. Giftastic uses Jquery to grab the inputs of user’s, thening using the Giphy api and ajax, requests all gifs with that/those keywords entered."
 },
 {
   "name": "Giftastic",
   "image": "https://raw.githubusercontent.com/ThaGrza/Giftastic/master/assets/screenshot.png",
-  "tech": "html, Javascript, Jquery, Css",
+  "tech": "https://img.icons8.com/color/48/000000/javascript.png",
+  "tech2":  "https://img.icons8.com/color/48/000000/react-native.png",
+  "tech3":  "https://img.icons8.com/color/48/000000/css3.png",
   "githubUrl": "https://github.com/ThaGrza/Giftastic",
-  "url":"https://thagrza.github.io/Giftastic/"
+  "url": "https://thagrza.github.io/Giftastic/",
+  "description": "Giftastic is a simple site for searching for Gifs. There is a search bar used to search/ add new gifs. Giftastic uses Jquery to grab the inputs of user’s, thening using the Giphy api and ajax, requests all gifs with that/those keywords entered."
 },
 {
   "name": "Movie Jeeves",
-  "image": "https://raw.githubusercontent.com/ThaGrza/movieApp/main/assets/Screenshot.png",
-  "tech": "Javascript, React, Css",
+  "image": "#",
+  "tech": "https://img.icons8.com/color/48/000000/javascript.png",
+  "tech2":  "https://img.icons8.com/color/48/000000/react-native.png",
+  "tech3":  "https://img.icons8.com/color/48/000000/css3.png",
   "githubUrl": "https://github.com/ThaGrza/movieApp",
-  "url":"https://gumballmovies.netlify.app/"
-},
-{
-  "name": "Netflix Clone",
-  "image": "https://raw.githubusercontent.com/ThaGrza/Netflix-clone/main/src/screenshot.png",
-  "tech": "Javascript, React, Css",
-  "githubUrl": "https://github.com/ThaGrza/Netflix-clone",
-  "url":""
+  "url":"https://gumballmovies.netlify.app/",
+  "description": "Giftastic is a simple site for searching for Gifs. There is a search bar used to search/ add new gifs. Giftastic uses Jquery to grab the inputs of user’s, thening using the Giphy api and ajax, requests all gifs with that/those keywords entered."
 }
 ]

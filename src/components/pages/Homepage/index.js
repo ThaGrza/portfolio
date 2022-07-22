@@ -1,7 +1,8 @@
 import React from "react";
 import "./index.css";
-import profilePic from "./profilePic.png";
-// import Footer from "../../Footer/index.js";
+import profilePic from "../../../assets/images/profilePic.png";
+import utimage from "../../../assets/images/UT.png";
+import accimage from "../../../assets/images/acc.png";
 
 function Homepage () {
   return (
@@ -25,12 +26,16 @@ function Homepage () {
       </div>
     </div>
     <div className="edu">
-      <h1 className="eduHeader">Education</h1>
-      <div className="eduInfo">
-        <h2 className="eduItem">University of Texas at Austin</h2>
-        <h4 className="eduSubtext">Fullstack Web Developer certificate • 2019-2020</h4>
-        <h2 className="eduItem">Austin Community College</h2>
-        <h4 className="eduSubtext">2018-2020</h4>
+      <h1 className="edu-title">Education</h1>
+      <div className="edu-item1">
+        <img className="edu-item1-image" alt="UT" src={utimage}/>
+        <h2 className="edu-school" >University of Texas at Austin</h2>
+        <h4 className="edu-info">Fullstack Web Developer certificate • 2019-2020</h4>
+      </div>
+      <div className="edu-item2">
+        <img className="edu-item2-image" alt="ACC" src={accimage}/>
+        <h2 className="edu-school">Austin Community College</h2>
+        <h4 className="edu-info">Computer Science • 2018-2020</h4>
       </div>
     </div>
     <div className="skills">

@@ -45,7 +45,7 @@
   padding-top: 5px;
   padding-bottom: 20px;
   font-weight: bolder;
-  font-size: 36px;
+  font-size: 2.7rem;
 }
 
 .headshot{
@@ -66,10 +66,12 @@
 }
 
 .edu{
-  height: 400px;
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: 13% 87%;
+  height: 350px;
   color: rgb(46, 46, 46);
   position: relative;
-  grid-template-columns: 40% 60%;
   background-color: whitesmoke;
   align-content: center;
   text-align: center;
@@ -78,30 +80,43 @@
   border-bottom-style: solid;
 }
 
-.eduHeader{
-  text-align: center;
+.edu-title{
+  font-size: 2.7rem;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.edu-school{
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.edu-item1{
+  grid-row-start: 2;
+  grid-column-start: 3;
+}
+
+.edu-item1-image{
+  height: 40%;
+  width: auto;
+}
+
+.edu-item2-image{
+  height: 40%;
+  width: auto;
+}
+
+.edu-item2{
+  grid-row-start: 2;
   grid-column-start: 1;
 }
 
-.eduInfo{
-  grid-column-start: 2;
+.edu-info{
   font-size: 18px;
-  font-weight: 400;
-  justify-content: space-evenly;
-}
-
-.eduItem{
+  font-weight: 600;
   text-align: center;
   padding: 0;
   margin: 0;
-}
-.eduSubtext{
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 30px;
 }
 
 

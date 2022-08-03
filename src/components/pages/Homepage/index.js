@@ -12,7 +12,7 @@ function Homepage () {
       <p className="name-title-header"> Fullstack Web Developer</p>
     </div>
     <div className="aboutMe">
-      <h1 className="aboutHeader">About Me</h1>
+      <h1 className="edu-title section-header">About Me</h1>
       <img src={profilePic} alt="Profile" className="headshot" />
       <div className="about-text-container">
         <p className="aboutText">I am a fullstack web developer based in Bedford, New Hampshire.
@@ -26,7 +26,7 @@ function Homepage () {
       </div>
     </div>
     <div className="edu">
-      <h1 className="edu-title">Education</h1>
+      <h1 className="edu-title section-header">Education</h1>
       <div className="edu-item1">
         <img className="edu-item1-image" alt="UT" src={utimage}/>
         <h2 className="edu-school" >University of Texas at Austin</h2>
@@ -39,7 +39,7 @@ function Homepage () {
       </div>
     </div>
     <div className="skills">
-      <h1 className="skillsHeader">Skills & Experience</h1>
+      <h1 className="section-header">Skills & Experience</h1>
       <div className="experienceContainer">
         <p className="experienceStory">This is a story about some of the stuff ive done</p>
         <p className="experienceStory">Omg heres another one about this super cool thing</p>

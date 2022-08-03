@@ -18,11 +18,10 @@ app.use((req, res, next) => {
 
 app.post('/send', (req, res, next) => {
   sgMail.setApiKey(process.env.REACT_APP_API_KEY);
-  console.log(req.body);
-  console.log()
   const msg = {
-    to: 'andrewgriswold7@gmail.com',
-    from: req.body.email,
+    // Change when sendgrid is unblocked
+    to: 'mrsoup3574@gmail.com',
+    from: 'andrewgriswold7@gmail.com',
     subject: req.body.name,
     text: req.body.email + req.body.company + req.body.message,
     html: '<strong>Testing testing I think its not working because sendgrid account approval needed</strong>',

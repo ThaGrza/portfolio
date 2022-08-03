@@ -5,7 +5,7 @@
     "tech2":  "https://img.icons8.com/color/48/000000/react-native.png",
     "tech3":  "https://img.icons8.com/color/48/000000/css3.png",
     "githubUrl": "https://github.com/ThaGrza/Netflix-clone",
-    "url":"",
+    "url":"https://gflix.netlify.app",
     "description": "Netflix Clone is the frontend of Netflix with much less fetures. You can scroll throught the movie selections and watch the trailers. I built this project to practice my CSS skills and design insight."
   },
   {

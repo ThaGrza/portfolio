@@ -1,5 +1,6 @@
 body {
-  background-image: url("../src/assets/images/stoneBackground.avif");
+  /* background-image: url("./assets/images/stoneBackground.avif"); */
+  background-color: rgb(78, 78, 78);
   background-size: cover;
   /* overflow-x: hidden; */
   margin: 0;

@@ -19,8 +19,7 @@ app.use((req, res, next) => {
 app.post('/send', (req, res, next) => {
   sgMail.setApiKey(process.env.REACT_APP_API_KEY);
   const msg = {
-    // Change when sendgrid is unblocked
-    to: 'mrsoup3574@gmail.com',
+    to: 'mrsoup3574@gmail.com',     
     from: 'andrewgriswold7@gmail.com',
     subject: req.body.name,
     text: req.body.email + req.body.company + req.body.message,

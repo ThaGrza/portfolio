@@ -1,7 +1,6 @@
 import React from "react";
 import Axios from "axios";
 import "./index.css";
-import Footer from "../../Footer/index";
 
   
 class ContactForm extends React.Component {
@@ -96,7 +95,6 @@ class ContactForm extends React.Component {
             <button type="submit" className="form-button">Submit</button>
           </form>
         </div>
-      <Footer />
       </div>
     );
   };

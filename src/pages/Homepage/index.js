@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.css";
-import profilePic from "../../../assets/images/profilePic.png";
-import utimage from "../../../assets/images/UT.png";
-import accimage from "../../../assets/images/acc.png";
+import profilePic from "../../assets/images/profilePic.png";
+import utimage from "../../assets/images/UT.png";
+import accimage from "../../assets/images/acc.png";
 
 function Homepage () {
   return (

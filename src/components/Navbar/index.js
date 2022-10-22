@@ -9,7 +9,8 @@ const Navbar = props => (
     </div>
     <div className="nav-links-container">
       <Link to="/portfolio" className="nav-links"><h3>Portfolio</h3></Link>
-      <Link to="/contact" className="nav-links"><h3>Contact</h3></Link>
+      <Link to="/experience" className="nav-links"><h3>Experience</h3></Link>
+      {/* <Link to="/contact" className="nav-links"><h3>Contact</h3></Link> */}
     </div>
   </div>
 );

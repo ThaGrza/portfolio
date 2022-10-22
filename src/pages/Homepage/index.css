@@ -1,77 +1,81 @@
-.homepage-container{
+.homepage-container {
   overflow-y: scrollable;
   height: 100vh;
   width: 100vw;
 }
-.headerContainer{
+.headerContainer {
   position: relative;
   left: 0;
   right: 0;
   height: 100%;
   text-align: center;
 }
-.section-header{
+.section-header {
   padding-top: 5px;
   padding-bottom: 20px;
   font-weight: bolder;
   font-size: 2.7rem;
 }
-.nameHeader{
-  font-family: 'Otomanopee One', sans-serif;
+.nameHeader {
+  font-family: "Otomanopee One", sans-serif;
   font-size: 72px;
   text-align: center;
   color: white;
   font-weight: bolder;
   padding-top: 300px;
 }
-.name-title-header{
-  font-family: 'Otomanopee One', sans-serif;
+.name-title-header {
+  font-family: "Otomanopee One", sans-serif;
   color: white;
   font-size: 32px;
 }
 
 /* ADD SCROLL BUTTON ARROW TO SHOW YOU CAN SCROLL FOR CONTENT */
-.scrollButton{
-  background-color: red;
-  height: 50px;
-  width: 50px;
+.scroll-button {
+  background-color: rgb(59, 90, 192);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5rem;
 }
 
-.aboutMe{
+.aboutMe {
   text-align: center;
-  background-color: #464545;
+  background-color: #181616;
   color: whitesmoke;
-  border-bottom:black;
+  border-bottom: black;
   border-width: 1px;
   border-bottom-style: solid;
   padding-bottom: 50px;
 }
 
-.aboutHeader{
+.aboutHeader {
   padding-top: 5px;
   padding-bottom: 20px;
   font-weight: bolder;
   font-size: 2.7rem;
 }
 
-.headshot{
+.headshot {
   height: 250px;
   border-radius: 50%;
 }
-.about-text-container{
+.about-text-container {
   margin: auto;
   width: 80%;
   text-align: center;
 }
 
-.aboutText{
+.aboutText {
   font-size: 1.4rem;
   line-height: 2rem;
   font-weight: 400;
   text-indent: 20px;
 }
 
-.edu{
+.edu {
   display: grid;
   grid-template-columns: 40% 20% 40%;
   grid-template-rows: 13% 87%;
@@ -81,44 +85,44 @@
   background-color: whitesmoke;
   align-content: center;
   text-align: center;
-  border-bottom:black;
+  border-bottom: black;
   border-width: 1px;
   border-bottom-style: solid;
 }
 
-.edu-title{
+.edu-title {
   font-size: 2.7rem;
   grid-column-start: 2;
   grid-row-start: 1;
 }
 
-.edu-school{
+.edu-school {
   font-weight: 600;
   font-size: 2rem;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
 }
 
-.edu-item1{
+.edu-item1 {
   grid-row-start: 2;
   grid-column-start: 3;
 }
 
-.edu-item1-image{
+.edu-item1-image {
   height: 40%;
   width: auto;
 }
 
-.edu-item2-image{
+.edu-item2-image {
   height: 40%;
   width: auto;
 }
 
-.edu-item2{
+.edu-item2 {
   grid-row-start: 2;
   grid-column-start: 1;
 }
 
-.edu-info{
+.edu-info {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
@@ -126,8 +130,7 @@
   margin: 0;
 }
 
-
-.skills{
+.skills {
   height: auto;
   color: rgb(46, 46, 46);
   position: relative;
@@ -137,44 +140,43 @@
   background-color: whitesmoke;
   border-bottom: thistle;
 }
-.skillsHeader{
+.skillsHeader {
   padding-top: 10px;
   text-align: center;
-
 }
-.skillsGraph{
+.skillsGraph {
   grid-column-start: 2;
   font-size: 18px;
   font-weight: 400;
   text-align: center;
 }
 
-.skill{
+.skill {
   height: 100px;
   margin-bottom: 10px;
 }
 
-.skillHeader{
+.skillHeader {
   margin: 0;
   padding: 0;
   color: black;
   font-size: 28px;
-  font-weight:500;
+  font-weight: 500;
   text-align: center;
 }
 
-.skillBars{
+.skillBars {
   grid-column-start: 2;
   justify-content: center;
   align-content: center;
 }
 
-.skillHeaderContainer{
+.skillHeaderContainer {
   display: flex;
   flex-direction: row;
 }
 
-.skillPercentOutline{
+.skillPercentOutline {
   display: grid;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   height: 25px;
@@ -187,35 +189,35 @@
   border-style: solid;
 }
 
-.skillPercent{
+.skillPercent {
   grid-column-start: 1;
   background-color: black;
 }
 
-.skillIcon{
+.skillIcon {
   height: 40px;
   width: auto;
   margin-right: 10px;
 }
 
-.percentStart{
+.percentStart {
   padding: 0;
   grid-column-start: 1;
 }
 
-.percentEnd{
+.percentEnd {
   padding: 0;
   grid-column-end: 10;
 }
 
-.experienceContainer{
+.experienceContainer {
   grid-column-start: 1;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
 
-.experienceStory{
+.experienceStory {
   font-size: 18px;
   font-weight: 400;
   text-align: center;

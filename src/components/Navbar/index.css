@@ -1,30 +1,33 @@
-.nav-container{
+.nav-container {
   position: sticky;
   top: 0;
   display: flex;
-  width: 100%;
+  width: 80%;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  margin: auto;
 }
 
-.page-title-container{
+.page-title-container {
   margin: 0 1.7rem 0 1.7rem;
-
 }
-.page-title{
+.page-title {
   color: whitesmoke;
+  text-decoration: none;
+  font-size: 1.3rem;
 }
 
-.nav-links-container{
+.nav-links-container {
   display: flex;
 }
-.nav-links{
+.nav-links {
   color: whitesmoke;
   margin: 0 1.7rem 0 1.7rem;
-
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
-h1{
+h1 {
   margin: 0;
 }

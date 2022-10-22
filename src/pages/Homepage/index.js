@@ -8,7 +8,7 @@ function Homepage () {
   return (
   <div className="homepage-container">
     <div className="headerContainer">
-      <h1 className="nameHeader">Hello, my name is Andrew.</h1>
+      <h1 className="nameHeader">Hello, my name is Andrew</h1>
       <p className="name-title-header"> Fullstack Web Developer</p>
     </div>
     <div className="aboutMe">

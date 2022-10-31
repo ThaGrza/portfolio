@@ -43,7 +43,7 @@
 
 .aboutMe {
   text-align: center;
-  background-color: #181616;
+  background-image: linear-gradient(rgb(28, 28, 49), white);
   color: whitesmoke;
   border-bottom: black;
   border-width: 1px;

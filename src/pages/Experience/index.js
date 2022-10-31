@@ -1,4 +1,5 @@
 import React from 'react'
+import Particles from 'react-tsparticles';
 import './index.css';
 
 export default function Experience() {

@@ -16,7 +16,7 @@
     "tech3":  "https://img.icons8.com/color/48/000000/css3.png",
     "githubUrl": "https://github.com/ThaGrza/Morty-Collector",
     "url":"https://thagrza.github.io/Morty-Collector/",
-    "description": "Morty Collector is a collecting game based on numbers. You are given a target score to reach using 4 different valued Morty’s. Each Morty’s value is hidden but can be learned by clicking on them and seeing your current score increase by the value it had. Match the target score and your score to collect the Morty you made the winning match with. Morty Collector uses JQuery to have onClick events along with functional programming to update the DOM based on user events."
+    "description": " Morty Collector is a Rick and Morty themed collecting game where you have to match a given target score with a variety of Morty's with hidden random values."
   },
   {
   "name": "Train Scheduler",

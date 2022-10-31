@@ -5,9 +5,7 @@ import Portfolio from './pages/Portfoliopage';
 import Navbar from "./components/Navbar/index";
 import Contact from "./pages/Contact/index";
 import Experience from './pages/Experience';
-
-
-
+import Particles from 'react-tsparticles';
 
 function App() {
   return (

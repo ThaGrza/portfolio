@@ -15,9 +15,11 @@
     "npm": "^8.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-particles": "^2.5.3",
     "react-router-dom": "*",
     "react-scripts": "*",
-    "react-tsparticles": "^2.5.3"
+    "tsparticles": "^2.5.3",
+    "tsparticles-engine": "^2.5.2"
   },
   "scripts": {
     "start": "react-scripts start",

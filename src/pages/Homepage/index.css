@@ -82,7 +82,7 @@
   height: 400px;
   color: rgb(46, 46, 46);
   position: relative;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   align-content: center;
   text-align: center;
   border-bottom: black;
@@ -137,7 +137,7 @@
   align-content: center;
   text-align: center;
   grid-template-columns: 40% 60%;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   border-bottom: thistle;
 }
 .skillsHeader {

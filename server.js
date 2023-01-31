@@ -38,7 +38,6 @@ app.post('/send', (req, res, next) => {
         success: false
       });
     });
-
 });
 
 app.listen(PORT, function() {

@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 import Homepage from "./pages/Homepage/index";
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import Portfolio from './pages/Portfoliopage';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Portfolio from "./pages/Portfoliopage";
 import Navbar from "./components/Navbar/index";
 import Contact from "./pages/Contact/index";
-import { Particle } from './components/Particle';
-
+import { Particle } from "./components/Particle";
 
 const App = () => {
   return (
@@ -20,7 +19,7 @@ const App = () => {
         </Routes>
       </div>
     </Router>
-  )
-}
+  );
+};
 
 export default App;

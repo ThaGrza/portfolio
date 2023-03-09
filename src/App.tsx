@@ -13,9 +13,10 @@ const App = () => {
         <Navbar />
         <Particle />
         <Routes>
-          <Route exact path="/" element={<Homepage />} />
-          <Route exact path="/Portfolio" element={<Portfolio />} />
-          <Route exact path="/contact" element={<Contact />} />
+          {/* changed from exact path */}
+          <Route path="/" element={<Homepage />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./style.css";
 import profilePic from "../../assets/images/profilePic.png";
 import utimage from "../../assets/images/UT.png";
 import accimage from "../../assets/images/acc.png";

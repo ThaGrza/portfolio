@@ -1,4 +1,4 @@
-.contact-container{
+.contact-container {
   display: flex;
   /* min-height: 100vh; */
   justify-content: center;
@@ -9,7 +9,7 @@
   float: right;
 } */
 
-.form-container{
+.form-container {
   /* display: grid; */
   width: 50%;
   background-color: #fff;
@@ -19,7 +19,7 @@
   line-height: 2.4rem;
 }
 
-#contact-form{
+#contact-form {
   padding: 0 1.5rem 1rem 1.5rem;
   font-size: 1.3rem;
   font-family: sans-serif;
@@ -28,7 +28,7 @@
   justify-content: center;
 }
 
-.contact-intro{
+.contact-intro {
   margin-left: 1rem;
   font-size: 1.2rem;
   text-align: center;
@@ -36,13 +36,13 @@
   font-weight: 500;
 }
 
-.contact-header{
+.contact-header {
   margin-top: 1rem;
   text-align: center;
   font-size: 3rem;
 }
 
-label{
+label {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -51,37 +51,38 @@ label{
   line-height: 2rem;
 }
 
-input, textarea{
+input,
+textarea {
   flex: 0 0 20rem;
   width: 20rem;
   height: 1.4rem;
   margin-left: 1rem;
 }
 
-textarea{
+textarea {
   width: 100%;
   height: 10rem;
   resize: none;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   font-size: 1.1rem;
-  text-indent: .5rem;
+  text-indent: 0.5rem;
   line-height: 1.2rem;
 }
 
-button.form-button{
+button.form-button {
   justify-self: center;
   width: 10rem;
   margin-left: 10em;
 }
 
-.email1-alert{
+.email1-alert {
   color: rgb(43, 182, 43);
   margin-left: 11rem;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.email2-alert{
+.email2-alert {
   color: red;
   margin-left: 11rem;
   margin-top: 0px;

@@ -1,5 +1,6 @@
 import React from "react";
 import GithubIcon from "../../assets/icons/githubIcon.png";
+import "./style.css";
 
 interface Website {
   url?: string;

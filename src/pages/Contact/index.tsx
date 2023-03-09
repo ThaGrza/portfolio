@@ -1,6 +1,6 @@
 import React from "react";
 import Axios from "axios";
-import "./index.css";
+import "./style.css";
 
 class ContactForm extends React.Component {
   constructor(props) {

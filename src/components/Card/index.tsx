@@ -24,7 +24,7 @@ const Card = (props: Website) => (
       <img
         className="card-img"
         alt="View Website"
-        href={props.url}
+        ref={props.url}
         src={props.image}
       />
     </a>

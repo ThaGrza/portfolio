@@ -1,36 +1,43 @@
 import React from "react";
 import Axios from "axios";
 import "./style.css";
+interface Details {
+  name: string;
+  company: string;
+  email: string;
+  message: string;
+  emailSent: boolean | null;
+}
 
-class ContactForm extends React.Component {
-  constructor(props) {
-    super(props);
+class ContactForm extends React.Component<{}, Details> {
+  constructor(details: Details) {
+    super(details);
     this.state = {
-      name: "",
-      company: "",
-      email: "",
-      message: "",
+      name: " ",
+      company: " ",
+      email: " ",
+      message: " ",
       emailSent: null,
     };
   }
 
-  onNameChange(event) {
-    this.setState({ name: event.target.value });
+  onNameChange(event: React.FormEvent<HTMLInputElement>) {
+    this.setState({ name: event.currentTarget.value });
   }
 
-  onCompanyChange(event) {
-    this.setState({ company: event.target.value });
+  onCompanyChange(event: React.FormEvent<HTMLInputElement>) {
+    this.setState({ company: event.currentTarget.value });
   }
 
-  onEmailChange(event) {
-    this.setState({ email: event.target.value });
+  onEmailChange(event: React.FormEvent<HTMLInputElement>) {
+    this.setState({ email: event.currentTarget.value });
   }
 
-  onMessageChange(event) {
-    this.setState({ message: event.target.value });
+  onMessageChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
+    this.setState({ message: event.currentTarget.value });
   }
 
-  handleSubmit(event) {
+  handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     // Post request for sendgrid.
@@ -124,7 +131,7 @@ class ContactForm extends React.Component {
                   className="form-control"
                   required
                   id="message"
-                  rows="5"
+                  rows={5}
                   value={this.state.message}
                   onChange={this.onMessageChange.bind(this)}
                 />
